@@ -69,3 +69,22 @@ nav a:hover::after {
     width: 100%;
     box-shadow: 0 0 4px var(--accent), 0 0 8px var(--accent-hover);
 }
+
+/* ===== Footer ===== */
+footer {
+    background: var(--card-bg);
+    color: var(--subtext);
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
