@@ -1,8 +1,9 @@
-import flask
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 
 app = Flask(__name__)
 
+
+# After loading, redirect to the main index page
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -22,6 +23,7 @@ def contact():
 @app.route('/achievements')
 def achievements():
     return render_template('achievements.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

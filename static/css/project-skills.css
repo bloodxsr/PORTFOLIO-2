@@ -340,3 +340,77 @@
   margin: 20px auto;
   display: block;
 }
+
+.center-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* GitHub Button */
+.btn-github {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  background-color: #0b0b0b;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+/* Icon inside the button */
+.btn-github svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.btn-github:hover {
+  background-color: #00e0ff;
+  color: #000;
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+/* Hover icon effect */
+.btn-github:hover svg {
+  transform: scale(1.1);
+}
+
+/* Optional Glow Border Animation */
+.btn-github {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-github::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  padding: 2px;
+  background: linear-gradient(120deg, #00e0ff, transparent, #00e0ff);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.5;
+  transition: opacity 0.4s ease;
+}
+
+.btn-github:hover::before {
+  opacity: 1;
+}
