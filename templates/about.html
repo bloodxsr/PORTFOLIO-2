@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project-skills.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theme-toggle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/light-mode.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sections.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="{{ url_for('static', filename='js/light-dark.js') }}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <p>Learn more about my journey, skills, and interests.</p>
+    
+
+      <nav class="navbar">
+          <a href="{{ url_for('home') }}">Home</a>
+          <a href="{{ url_for('about') }}">About</a>
+          <a href="{{ url_for('projects') }}">Projects</a>
+          <a href="{{ url_for('contact') }}">Contact</a>
+          <a href="{{ url_for('achievements') }}">Achievements</a>
+      </nav>
+    </header>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div>
+        <section>
+            <h2>Who I Am</h2>
+            <p>I’m a passionate programmer driven by curiosity and a desire to dive deep into concepts that hold the potential to reshape the way we see the world. Beyond code, I’m an avid gamer who loves exploring immersive worlds, and an experienced event manager who enjoys bringing people together to create something unforgettable.</p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <div class="icons">
+                  <i class="devicon-python-plain colored" title="Python"></i>
+                  <i class="devicon-csharp-plain colored" title="CSharp"></i>
+                  <i class="devicon-java-plain colored" title="Java"></i>
+                </div>
+              </div>
+          
+              <div class="skill-card">
+                <h3>Web Development</h3>
+                <div class="icons">
+                  <i class="devicon-html5-plain colored" title="HTML"></i>
+                  <i class="devicon-css3-plain colored" title="CSS"></i>
+                  <i class="devicon-flask-original colored" title="Flask"></i>
+                </div>
+              </div>
+          
+              <div class="skill-card">
+                <h3>Other Tools</h3>
+                <div class="icons">
+                  <i class="devicon-git-plain colored" title="Git"></i>
+                  <i class="devicon-github-original colored" title="GitHub"></i>
+                  <i class="devicon-vscode-plain colored" title="VS Code"></i>
+                  <i class="devicon-mysql-plain colored" title="MySQL"></i>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Future Goals</h2>
+            <p>My aim is to enhance my problem-solving abilities through DSA and explore real-world software projects. 
+            I’m also learning about AI, automation, and cloud computing to broaden my technical foundation.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <p>Student at <a href="https://www.vips.edu/" target="_blank">VIPS-TC</a> pursuing a degree in Artificial Intelligence and Machine Learning.</p>
+            <p>Student at <a href="https://www.iitm.ac.in/" target="_blank">IIT Madras</a> pursuing a degree in Data science and application.</p>
+            <p>Completed 12th grade from <a href="https://www.bbpsmv.com/" target="_blank">Bal Bhavan Public School</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2025 Bivash Chakraborty | <a href="{{ url_for('contact') }}">Contact</a></p>
+    </footer>
+
+</body>
+</html>

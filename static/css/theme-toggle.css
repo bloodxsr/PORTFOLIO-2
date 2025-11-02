@@ -1,0 +1,38 @@
+/* ===== Theme Toggle Button ===== */
+.theme-toggle {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--card-bg);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--accent);
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+
+/* ===== Font Awesome Icon Fix ===== */
+.theme-toggle i {
+  font-size: 20px;
+  color: #ff69b4 !important; /* pink moon/sun */
+  pointer-events: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle i::before {
+  display: block;
+  color: #ff69b4 !important;
+}

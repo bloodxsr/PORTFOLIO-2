@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements | Your Name</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/project-skills.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/theme-toggle.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/light-mode.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sections.css') }}">
+  <script src="https://kit.fontawesome.com/a2e0e9d60d.js" crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='js/light-dark.js') }}"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>My Achievements</h1>
+    <p>Milestones that shaped my journey</p>
+  
+
+    <nav>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('projects') }}">Projects</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('achievements') }}">Achievements</a>
+    </nav>
+  </header>
+  
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+
+    <div class="achievements-grid">
+
+      <div class="achievement-card">
+        <i class="fa-solid fa-trophy"></i>
+        <h3>CBSE Boards</h3>
+        <div class="extra-info">
+          <p>Scored 81% in class 12th and 92% in class 10th.</p>
+          <h4>Details: Class 12th</h4>
+          <p>Scores: 89% in physics, 77% in chemistry, 77% in Mathematics, 90% in English</p>
+          <h4>Details: Class 10th</h4>
+          <p>Scores: 94% in Science, 97% in Mathematics, 81% in Social Science, 91% in English</p>
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <i class="fas fa-medal"></i>
+        <h3>Top Coder</h3>
+        <div class="extra-info">
+          <p>Ranked among the top 5% in competitive programming contests.</p>
+          <p>Solved 300+ algorithmic problems focusing on optimization and efficiency.</p>
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <i class="fa-solid fa-gamepad"></i>
+        <h3>Gaming Event Host</h3>
+        <div class="extra-info">
+          <p>Organized national-level gaming tournaments with 500+ participants.</p>
+          <p>Handled event logistics, live streaming, and team coordination.</p>
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <i class="fa-solid fa-people-group"></i>
+        <h3>Event Management Lead</h3>
+        <div class="extra-info">
+          <p>Led and managed college fests and tech events efficiently.</p>
+          <p>Worked with sponsors, handled marketing, and oversaw technical teams for smooth execution.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 style="margin-top: 70px;">Certificates</h2>
+    <div class="certificate-gallery">
+      <div class="certificate-card">
+        <img src="{{ url_for('static', filename='certificates/hackathon_certificate.jpg') }}" 
+             alt="Hackathon Certificate" class="certificate-img">
+        <p>Hackathon Participation Certificate</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Bivash Chakraborty | Designed with ❤️ &amp; Passion</p>
+  </footer>
+
+  <script>
+    // Expand card after 2 seconds of hover
+    document.querySelectorAll('.achievement-card').forEach(card => {
+      let hoverTimer;
+
+      card.addEventListener('mouseenter', () => {
+        hoverTimer = setTimeout(() => {
+          card.classList.add('expanded');
+        }, 1000); // expand after 1 second
+      });
+
+      card.addEventListener('mouseleave', () => {
+        clearTimeout(hoverTimer);
+        card.classList.remove('expanded');
+      });
+    });
+  </script>
+</body>
+</html>

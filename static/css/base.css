@@ -1,0 +1,25 @@
+/* ===== Root Colors ===== */
+:root {
+    --bg: #0d1117;
+    --card-bg: #161b22;
+    --text: #e6edf3;
+    --subtext: #8b949e;
+    --accent: #00e0ff; /* Aqua Cyan */
+    --accent-hover: #66ffff;
+}
+
+/* ===== Base ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}

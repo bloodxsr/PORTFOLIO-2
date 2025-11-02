@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project-skills.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theme-toggle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/light-mode.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sections.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/light-dark.js') }}"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <p>Let's connect — I'd love to hear from you!</p>
+
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <a href="{{ url_for('achievements') }}">Achievements</a>
+        </nav>
+    </header>
+    
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Here are the best ways to reach me for collaborations, opportunities, or just a friendly chat.</p>
+
+        <div class="contact-details">
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:bivashc53@gmail.com">bivashc53@gmail.com</a></p>
+            </div>
+        
+            <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+91 8826680159</p>
+            </div>
+        
+            <div class="contact-card">
+                <i class="fa-brands fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/bivash-chakraborty-67228b360/" target="_blank">Bivash Chakraborty</a></p>
+            </div>
+        
+            <div class="contact-card">
+                <i class="fa-brands fa-github"></i>
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/bloodxsr" target="_blank">github.com/bloodxsr</a></p>
+            </div>
+        
+            <div class="contact-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Location</h3>
+                <p>Delhi, India</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fab fa-discord"></i>
+                <h3 class="valorant-text">Discord</h3>
+                <p>@haliaxsr</p>
+            </div>
+
+            <div class="contact-card">
+                <i class ="fa-brands fa-instagram"></i>
+                <h3>Instagram</h3>
+                <p>To be added soon</a></p>
+            </div>
+        
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Bivash Chakraborty | <a href="{{ url_for('contact') }}">Contact</a></p>
+    </footer>
+</body>
+</html>
+

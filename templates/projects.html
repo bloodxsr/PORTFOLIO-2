@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects | Daksham</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project-skills.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theme-toggle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/light-mode.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sections.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/light-dark.js') }}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <p>Explore my work and contributions in various projects.</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
+            <a href="/achievements">Achievements</a>
+        </nav>
+    </header>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+
+<main>
+    <section class="project-section">
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='img/calculator.png') }}" alt="Calculator App">
+            <h3>Calculator App</h3>
+            <p>A GUI calculator made using Python Tkinter.</p>
+            <a href="https://github.com/yourgithub/calculator" target="_blank">🔗 View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='img/sorting.png') }}" alt="Sorting Visualizer">
+            <h3>Sorting Visualizer</h3>
+            <p>Visual representation of sorting algorithms in Python.</p>
+            <a href="https://github.com/yourgithub/sorting-visualizer" target="_blank">🔗 View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='img/portfolio.png') }}" alt="Portfolio Website">
+            <h3>Portfolio Website</h3>
+            <p>This very website — built using Python Flask!</p>
+            <a href="https://github.com/yourgithub/portfolio" target="_blank">🔗 View on GitHub</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Bivash Chakraborty | Built with ❤️ using Flask</p>
+</footer>
+</body>
+</html>

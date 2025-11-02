@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/project-skills.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/theme-toggle.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/light-mode.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sections.css') }}">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <script src="{{ url_for('static', filename='js/light-dark.js') }}"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Hi, I'm Bivash</h1>
+    <p>
+      I'm a B.Tech student specializing in Artificial Intelligence and Machine Learning with a passion for exploring
+      innovative coding ideas. I enjoy experimenting with technologies that can create meaningful solutions and help shape the future.
+    </p>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
+      <a href="/achievements">Achievements</a>
+    </nav>
+  </header>
+
+  <!-- 🌗 Theme Toggle Button -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <section>
+    <h2>A small intro about myself</h2>
+    <p>
+      I enjoy programming in Python, tackling data structures and algorithms challenges, and developing innovative
+      technology projects. Check out about for more.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-section1">
+      <div class="project-card1">
+        <h3>DISCORD BOT</h3>
+        <p>Developed using discord.py to automate tasks and manage servers. Also integrated with Gemini AI.</p>
+      </div>
+
+      <div class="project-card1">
+        <h3>Sorting Visualizer</h3>
+        <p>Implemented in Python to visualize bubble, merge, and quick sort algorithms.</p>
+      </div>
+
+      <div class="project-card1">
+        <h3>Computer Vision</h3>
+        <p>Built with OpenCV for image detection and processing experiments.</p>
+      </div>
+
+      <div class="project-card1">
+        <h3>Portfolio Website</h3>
+        <p>Made with Flask.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Connect with me:
+      <a href="https://github.com/bloodxsr">GitHub</a> |
+      <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+</html>
